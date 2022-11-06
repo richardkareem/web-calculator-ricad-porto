@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header > h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container {
+  background-color: rgb(108, 108, 108);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  margin: 50px auto;
+  border: 10px solid white;
+  box-shadow: 5px 8px 20px 3px rgb(116, 116, 116), -5px -8px 20px 3px rgb(116, 116, 116);
+}
+
+.container .kolom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .kolom .kotak {
+  padding: 40px;
+  width: 25%;
+  flex-grow: 1;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgb(68, 113, 128) 2px 2px 3px rgb(68, 113, 128) inset;
+  border: 1px solid rgb(55, 129, 215);
+}
+
+.display {
+  background-color: burlywood;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  text-align: end;
+  padding: 50px;
+}
+
+.kolom .kotak:hover {
+  background-color: aqua;
+
+  transition: 0.6s;
+}
+
+/* .double {
+  flex-basis: 50%;
+} */
+/* RIWAYAT */
+
+.history h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.history {
+  width: 100%;
+  margin: 70px auto 0 auto;
+  overflow: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+
+th {
+  background-color: whitesmoke;
+  color: rgb(48, 48, 48);
+}
+
+tr:nth-child(event) {
+  background-color: #d2d2d2;
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    margin: 80px auto;
+    border: 20px solid white;
+  }
+}
